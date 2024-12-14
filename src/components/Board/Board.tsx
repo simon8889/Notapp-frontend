@@ -26,7 +26,7 @@ const Board = () => {
 
   useEffect(() => {
     fetchNotes();
-  }, [fetchNotes]);
+  }, [token]);
   
   return (
     <NotesContext.Provider value={{notes, setNotes}}>
