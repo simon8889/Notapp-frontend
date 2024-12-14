@@ -1,0 +1,91 @@
+.Board__header {
+  z-index: 1;
+  display: flex;
+  position: sticky;
+  top: 10px;
+  justify-content: space-between;
+  align-items: center; 
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 1rem;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Board__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Board__title h2 {
+  margin: 0; 
+  font-size: 1.5rem;
+}
+
+.Board__title button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.Board__title button:hover {
+  background-color: #0056b3;
+}
+
+.Board__filter {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;
+  margin: 0; 
+}
+
+.Board__filter span {
+  font-size: 1rem;
+  margin: 0; 
+}
+
+.Board__filter input {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #aaa; 
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 70%; 
+  max-width: 300px; 
+}
+
+.Board__filter input:focus {
+  border-bottom-color: #fff; 
+}
+
+.Board h4 {
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .Board__title h2 {
+    font-size: 1rem;
+  }
+  
+  .Board__filter {
+    justify-content: space-around;
+  }
+  
+  .Board__filter input {
+    width: 50%; 
+    max-width: 300px; 
+  }
+}

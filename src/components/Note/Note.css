@@ -1,0 +1,125 @@
+.Note__container {
+  position: relative;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Note__buttons {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+
+.Note__buttons > svg {
+  cursor: pointer;
+}
+
+.Note__buttons > svg:hover {
+  opacity: .7;
+}
+
+.Note__contentText {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Note__date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.Note__categoriesTitle {
+  font-size: 1.1rem;
+  margin-top: 20px;
+  color: #444;
+}
+
+.Note__categoriesList {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.Note__category {
+  font-size: 0.9rem;
+  color: #0073e6;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.Note__category:hover {
+  text-decoration: underline;
+}
+
+.Note__addCategory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+  max-width: 200px;
+  margin: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.Note__addCategory > input {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.Note__addCategory > svg {
+  margin: 5px;
+}
+
+
+.Note__editing input[type="textbox"] {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #333;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+
+.Note__editing button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0073e6;
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Note__editing button:hover {
+  background-color: #005bb5;
+}
